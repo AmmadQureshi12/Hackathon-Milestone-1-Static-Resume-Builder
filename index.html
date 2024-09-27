@@ -1,0 +1,45 @@
+z<html lang="en">
+    <head>
+        <title>Resume Builder</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Static Resume Builder By Ammad Qureshi</h1>
+        <form action="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">phone</label>
+                <input type="phone" name="phone" id="phone" required>
+
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <label for="Education">Education:</label>
+                <textarea name="Education" id="Education" rows="4" required></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Experiance</legend>
+                <label for="Experiance">Experiance:</label>
+                <textarea name="Experiance" id="Experiance" rows="4" required></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Skill</legend>
+                <label for="Skill">Skill:</label>
+                <textarea name="Skill" id="Skill" rows="4" required></textarea><br>
+            </fieldset>
+            <button type="submit">General Resume Below </button>
+        </form>
+        <br>
+
+        <div id="ResumeOutput">
+            <!--RESUME WILL BE GENERATED BELOW-->
+        </div>
+        <script src="index.js"></script>
+
+    </body>
